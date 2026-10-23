@@ -1,1 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f2" />
+    <meta name="description" content="Logitrading: optimizador documental y de correos." />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <title>Logitrading | Optimizador documental y de correos</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegación principal">
+        <a class="brand" href="#extractor" aria-label="Logitrading, ir al extractor">
+          <span class="brand-mark" aria-hidden="true">
+            <img id="brand-logo" alt="" />
+            <span id="logo-placeholder">Logo pendiente</span>
+          </span>
+          <span class="brand-copy">
+            <strong>Logitrading</strong>
+            <span>Optimizador documental<br />y de correos</span>
+          </span>
+        </a>
 
+        <p class="nav-label">MÓDULOS</p>
+        <nav class="desktop-nav" id="desktop-nav" aria-label="Apartados">
+          <a href="#extractor" data-route="extractor">Extractor de formularios PDF</a>
+          <a href="#enlaces" data-route="enlaces">Envío de enlaces y soportes</a>
+          <a href="#preinspeccion" data-route="preinspeccion">Correo de preinspección DIAN</a>
+          <a href="#zona-franca" data-route="zona-franca">Retiros de zona franca</a>
+          <a href="#retiro-mercancia" data-route="retiro-mercancia">Solicitud de retiro de mercancía</a>
+          <a href="#historial" data-route="historial">Historial de operaciones</a>
+        </nav>
+        <label class="mobile-nav-label" for="mobile-nav">Módulo</label>
+        <select class="mobile-nav" id="mobile-nav" aria-label="Seleccionar módulo">
+          <option value="extractor">Extractor de formularios PDF</option>
+          <option value="enlaces">Envío de enlaces y soportes</option>
+          <option value="preinspeccion">Correo de preinspección DIAN</option>
+          <option value="zona-franca">Retiros de zona franca</option>
+          <option value="retiro-mercancia">Solicitud de retiro de mercancía</option>
+          <option value="historial">Historial de operaciones</option>
+        </select>
+
+        <div class="sidebar-foot">USO INTERNO</div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <span class="topbar-kicker">LOGITRADING <span aria-hidden="true">/</span> OPERACIONES</span>
+          <span class="local-indicator"><span aria-hidden="true"></span> Espacio de trabajo local</span>
+        </header>
+        <section class="module-view" id="module-view" aria-live="polite" tabindex="-1"></section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

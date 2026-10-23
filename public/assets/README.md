@@ -1,0 +1,1 @@
+`logo.png` es el logo de la aplicación y `favicon.png` su icono de pestaña. Ambos archivos se proporcionan por separado.
